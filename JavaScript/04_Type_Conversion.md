@@ -1,12 +1,11 @@
 > 형 변환은 Type Conversion일까? Type Casting일까?
 - 1. Type Casting: 타입 캐스팅의 경우 프로그램 설계 중에 프로그래머가 
 해당 언어의 캐스팅 연산자를 사용하여 기존 데이터 유형을 다른 데이터 유형으로 의도적으로 변환하는 작업
-<br>
 - 2.Type conversion: 타입 컨버젼의 경우 데이터 타입이 컴파일러 또는 인터프리터 등을 통해 
 컴파일러타임, 런타임을 통해 자동으로 다른 데이터 타입으로 변환되는 작업. 
 그렇기에 대상 데이터 타입은 변경되는 타입보다 작을 수 없으므로 확장 변환(widening conversion)이라고도 한다. 
 그리고 가장 중요한 점은 서로 호환이 가능한 데이터 타입에만 적용할 수 있다.
-참조 블로그: [velog - 형 변환은 Type Conversion일까? Type Casting일까?](https://velog.io/@zeebeck/%ED%98%95-%EB%B3%80%ED%99%98)
+>> 참조 블로그: [velog - 형 변환은 Type Conversion일까? Type Casting일까?](https://velog.io/@zeebeck/%ED%98%95-%EB%B3%80%ED%99%98)
 
 ***
 
