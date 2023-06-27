@@ -66,6 +66,7 @@
   + environmentRecord (환경 기록)
   + outerEnvironmentReference (외부 환경 참조)
   <br>
+  
 + ✨`LexicalEnvironment` : **각 식별자의 '데이터' 추적 ** (변화 반영 ⭕)
  ```
   일반적으로 함수의 LexicalEnvironment는 
@@ -74,6 +75,7 @@
   + environmentRecord (환경 기록)
   + outerEnvironmentReference (외부 환경 참조)
 <br>
+
 + `ThisBinding` : `this` 식별자가 바라보고 있는 대상 객체
 
 
@@ -90,10 +92,9 @@
 <br/>
 
 ###  ✔ EnvironmentRecord
-  >+ environmentRecord : 현재 문맥의 식별자 정보가 수집됨
+  >+ environmentRecord : 현재 문맥의 식별자 정보가 수집됨<br>
   > ✨ environmentRecord 의 정보 수집 과정을 좀 더 쉽게 이해하기 위해 만든 허구의 개념이 바로 **'호이스팅(Hoisting)'**
-  >> **HOISTING** == 끌어 올리다 == **식별자 정보를 끌어 올리다** <br>
-  어디로? == **실행 컨텍스트 맨 위로**.
+  >> **HOISTING** == 끌어 올리다 == **식별자 정보를 끌어 올리다** <br> 어디로? == **실행 컨텍스트 맨 위로**.
 ![](https://velog.velcdn.com/images/doopal2/post/76baf35f-378a-44d9-ba24-a8e02032f14e/image.png)
 ```javascript
 function a() {
