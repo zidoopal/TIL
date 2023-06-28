@@ -98,16 +98,16 @@ c.d();
 > 예제  2)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/162848f7-428d-49d7-9a3d-5b6e9fe8381e/image.png)<br>
 ><br>
-><br>
 이번에는 `a.b.c` 호출, 이 때 `c`라는 함수안에서 `this` 호출 하면?<br>
 ![](https://velog.velcdn.com/images/doopal2/post/9e93c8b4-b2df-4bf4-aa4f-3fbeeaf18e42/image.png)<br>
 >
-✨**`this`는 `.` 앞의 객체를 참조함 **<br>
-`.` 앞에 `a.b`가 `this`가 된다. (에디터에서는 색깔로 this, 메서드 구분도 잘 된다 ㅎㅎ)<br>
-_cf. 결과에서 `{c: f}` 는 `a.b`와 동일_<br>
-><br>
+>✨**`this`는 `.` 앞의 객체를 참조함 **<br>
+>`.` 앞에 `a.b`가 `this`가 된다. (에디터에서는 색깔로 this, 메서드 구분도 잘 된다 ㅎㅎ)<br>
+>_cf. 결과에서 `{c: f}` 는 `a.b`와 동일_<br>
+<br>
+
 > 🚨
-**대괄호 표기법 `[]`** 썼을 때 주의!
+>**대괄호 표기법 `[]`** 썼을 때 주의!
 ```javascript
 obj.func();     // 이때의 this는 obj
 obj['func']();  // 이때의 this는 obj
@@ -126,19 +126,18 @@ person['info']['getName']();  // 이때의 this는 person['info']
 기본적으로 `this`는 window객체를 사용하나, <br>
 **명시적으로 `this`를 window가 아닌 다른 객체로 바꿔주는 함수**가** `call`, `apply`, `bind`** 이다.<br>
 **이때 `this`는 내가 '명시한 객체'에 바인딩 된다.**<br>
->> **1. `call`** / `func.call(thisArg[, arg1[, arg2[, ...]]])`
+> **1. `call`** / `func.call(thisArg[, arg1[, arg2[, ...]]])`
 + 함수를 호출함 / 호출하는 함수의 매개변수를 별개의 인자들로 받음<br>
 + **첫번 째 인자에 `this`로 셋팅하고 싶은 객체를 넘겨주어 this를 바꿔줌**<br>
 <br/>
 
->>
+>
 **2. `apply`**  / `func.apply(thisArg, [argsArray])`
 + 함수를 호출함 / 호출하는 함수의 매개변수를 배열로 받음
 + **첫번 째 인자에 `this`로 셋팅하고 싶은 객체를 넘겨주어 this를 바꿔줌**
 <br>
 
->>
->> **3. `bind`** / `func.bind(thisArg[, arg1[, arg2[, ...]]])`
+> **3. `bind`** / `func.bind(thisArg[, arg1[, arg2[, ...]]])`
 + **`bind`**는** 함수가 가리키는 `this`만 바꾸고 함수를 실행(호출)하지 않는다.**
 + 변개의 바인딩한 함수를 반환함. 변수를 할당하여 호출하는 형태로 사용 됨
   + 하드 바인딩 (명시적 바인딩을 함수로 한 번더 래핑함)<br>
