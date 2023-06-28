@@ -97,12 +97,12 @@ c.d();
 
 > 예제  2)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/162848f7-428d-49d7-9a3d-5b6e9fe8381e/image.png)<br>
-=
+
 <br>
 
 이번에는 `a.b.c` 호출, 이 때 `c`라는 함수안에서 `this` 호출 하면?<br>
 ![](https://velog.velcdn.com/images/doopal2/post/9e93c8b4-b2df-4bf4-aa4f-3fbeeaf18e42/image.png)<br>
-=
+
 ✨**`this`는 `.` 앞의 객체를 참조함 **<br>
 `.` 앞에 `a.b`가 `this`가 된다. (에디터에서는 색깔로 this, 메서드 구분도 잘 된다 ㅎㅎ)<br>
 _cf. 결과에서 `{c: f}` 는 `a.b`와 동일_<br>
@@ -145,8 +145,8 @@ person['info']['getName']();  // 이때의 this는 person['info']
   + 하드 바인딩 (명시적 바인딩을 함수로 한 번더 래핑함)<br>
   💡 하드 바인딩된 함수를 사용해 다른 함수에서 `this`가 변경되는 일을 방지할 수 있다<br>
   >
-![](https://velog.velcdn.com/images/doopal2/post/6287efd3-b375-45e9-8620-d062cd37ba4e/image.png)
-==
+![](https://velog.velcdn.com/images/doopal2/post/6287efd3-b375-45e9-8620-d062cd37ba4e/image.png)<br>
+
 >😵 `call`, `apply` 는 이해됐는데, `bind` 부분이 좀 헷갈렸다..!<br>
 ```javascript
 const c = a.bind(b);   // 여기선 아직 함수 호출 X 그냥 this를 들고있는 상태
