@@ -97,16 +97,15 @@ c.d();
 
 > 예제  2)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/162848f7-428d-49d7-9a3d-5b6e9fe8381e/image.png)<br>
-
-<br>
-
+><br>
+><br>
 이번에는 `a.b.c` 호출, 이 때 `c`라는 함수안에서 `this` 호출 하면?<br>
 ![](https://velog.velcdn.com/images/doopal2/post/9e93c8b4-b2df-4bf4-aa4f-3fbeeaf18e42/image.png)<br>
-
+>
 ✨**`this`는 `.` 앞의 객체를 참조함 **<br>
 `.` 앞에 `a.b`가 `this`가 된다. (에디터에서는 색깔로 this, 메서드 구분도 잘 된다 ㅎㅎ)<br>
 _cf. 결과에서 `{c: f}` 는 `a.b`와 동일_<br>
-
+><br>
 > 🚨
 **대괄호 표기법 `[]`** 썼을 때 주의!
 ```javascript
