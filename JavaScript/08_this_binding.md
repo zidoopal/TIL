@@ -93,11 +93,14 @@ c.d();
 >
 >>`d` 메서드 안에 `e`라는 내부함수가 또 있다.<br>
 6번째 줄 `e();` : 얘는 그냥 함수로써 호출함 ==  여기서의 `this`는 아묻따 전역객체<br>
+<br>
 
-> 예제  2)
+> 예제  2)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/162848f7-428d-49d7-9a3d-5b6e9fe8381e/image.png)<br>
 =
-이번에는 `a.b.c` 호출, 이 때 `c`라는 함수안에서 `this` 호출 하면?
+<br>
+
+이번에는 `a.b.c` 호출, 이 때 `c`라는 함수안에서 `this` 호출 하면?<br>
 ![](https://velog.velcdn.com/images/doopal2/post/9e93c8b4-b2df-4bf4-aa4f-3fbeeaf18e42/image.png)<br>
 =
 ✨**`this`는 `.` 앞의 객체를 참조함 **<br>
@@ -163,20 +166,20 @@ const d = a.bind(b, 1, 2); // 함수실행 아직 X,  그냥 this를 들고있�
 + **콜백함수 내부에서의 `this` 기본적으로는 전역객체를 봄**<br>
 
 🤔 기본적이지 않을 때는 어떤데? 👉 **지정하는 바에 따라서 달라 짐**<br>
-+ ** 콜백함수를 넘겨 받는 대상이 콜백함수를 어떻게 처리하느냐에 따라서 `this`가 달라짐**<br>
++ **콜백함수를 넘겨 받는 대상이 콜백함수를 어떻게 처리하느냐에 따라서 `this`가 달라짐**<br>
 (콜백 함수 자체가 뭘 어떻게 할 수 있는것은 아님)<br>
 <br>
 
->예 1)
+>예 1)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/8fc766a7-c8d2-404d-b87e-68c1c536e438/image.png)
-=
+=<br>
 여기서 `cb();` 는 함수로써 호출함 ▶ `this`는 전역객체(window)<br>
 so, 콘솔에는 전역객체(window)가 출력됨<br>
 <br>
 
->예 2)
+>예 2)<br>
 ![](https://velog.velcdn.com/images/doopal2/post/71dbac50-2f1e-4427-8814-6c21b1e772d1/image.png)
-=
+=<br>
 여기서 `cb.call(this);` <br>
 call함수 사용 ▶ `this`를 `cb의 this`로 (이 컨텍스트에서 `this` == `obj`)<br>
 so, 콘솔에는 `obj`가 출력됨<br>
@@ -191,7 +194,7 @@ so, 콘솔에는 `obj`가 출력됨<br>
 <br>
 
 ### ✔ 함수를 생성자함수로써 호출했을 때 - this
-+ **`new 연산자`를 쓴다 == 생성자 함수의 내용을 바탕으로 인스턴스 객체를 만드는 명령**
++ **`new 연산자`를 쓴다 == 생성자 함수의 내용을 바탕으로 인스턴스 객체를 만드는 명령**<br>
 👉 **새로 만들 인스턴스 객체 그 자체가 곧 `this` 가 됨**
 
 >
